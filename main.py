@@ -2,7 +2,7 @@ def calculate_distance():
     """
     ...
     """
-    # TODO: Implement the distance calculation using the distance formula.
+    # TODO: Implement the calculation using the distance formula.
     ...
 
 def main():
