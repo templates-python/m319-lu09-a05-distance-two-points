@@ -1,9 +1,13 @@
+"""Calculates the distance between two points in the CH1903 coordinate system."""
+
+
 def calculate_distance():
     """
     ...
     """
     # TODO: Implement the calculation using the distance formula.
     ...
+
 
 def main():
     # TODO: Request user input for coordinates of the two points.
@@ -15,6 +19,7 @@ def main():
     # TODO: Call the calculate_distance function and print the result.
     distance = ...
     print(f'Die Distanz zwischen den beiden Punkten beträgt: {distance} km')
+
 
 if __name__ == '__main__':
     main()
