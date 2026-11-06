@@ -1,3 +1,6 @@
+"""Calculates the distance between two points in the CH1903 coordinate system."""
+
+
 def calculate_distance(x1, y1, x2, y2):
     """
     Calculate the distance between two points in CH1903 coordinate system.
@@ -11,8 +14,12 @@ def calculate_distance(x1, y1, x2, y2):
     distance /= 1000
     return distance
 
+
 def main():
-    # TODO: Request user input for coordinates of the two points.
+    """
+    Asks the user for the coordinates of two points and prints the distance between them.
+    :return: None
+    """
     print('Bitte geben Sie die Koordinaten des ersten Punktes ein (x1, y1):')
     x1 = float(input('x1: '))
     y1 = float(input('y1: '))
@@ -20,9 +27,9 @@ def main():
     x2 = float(input('x2: '))
     y2 = float(input('y2: '))
 
-    # TODO: Call the calculate_distance function and print the result.
     distance = calculate_distance(x1, y1, x2, y2)
     print(f'Die Distanz zwischen den beiden Punkten beträgt: {distance} km')
+
 
 if __name__ == '__main__':
     main()

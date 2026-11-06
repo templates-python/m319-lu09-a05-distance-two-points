@@ -1,6 +1,11 @@
+"""Unit tests for the main module."""
+
+import pytest
+
 import main
 from main import calculate_distance
-import pytest
+
+
 def test_calculate_distance():
     assert calculate_distance(0, 0, 3, 4) == 0.005
     assert calculate_distance(600000, 200000, 680000, 250000) == pytest.approx(94.33981132056, 0.01)
@@ -21,4 +26,4 @@ def test_main(monkeypatch, capsys):
     captured = capsys.readouterr()
 
     # Check if the output is as expected
-    assert "Die Distanz zwischen den beiden Punkten beträgt:" in captured.out
+    assert 'Die Distanz zwischen den beiden Punkten beträgt:' in captured.out
